@@ -1,25 +1,3 @@
-"""
-test
-cari_tiket.py
-Fitur 3 (F3): Cari Tiket
-Penanggung jawab: Aleya
-
-Mencari tiket berdasarkan:
-  1. Kode tiket        -> exact match (harus persis sama), hasil maksimal 1 tiket
-  2. Nama pelapor      -> partial match, tidak case sensitive, bisa lebih dari 1 hasil
-
-Data tiket berupa list of dict (Array of Struct), contoh satu tiket:
-    {
-        "kode_tiket": "TKT001",
-        "nama_pelapor": "Andi Wijaya",
-        "jenis_masalah": "Hardware",
-        "deskripsi": "Laptop tidak bisa menyala",
-        "prioritas": "Sedang",
-        "status": "Menunggu",
-    }
-"""
-
-
 # ---------------------------------------------------------------------------
 # FUNGSI PENCARIAN (logika murni, tidak ada print/input supaya mudah diuji)
 # ---------------------------------------------------------------------------
