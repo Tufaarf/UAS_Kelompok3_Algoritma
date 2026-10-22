@@ -89,7 +89,7 @@ def menu_cari_tiket(daftar_tiket):
         if tiket is None:
             print(f"Tiket dengan kode '{kata_kunci}' tidak ditemukan.")
         else:
-            print("Jumlah hasil ditemukan:1")
+            print("Jumlah hasil ditemukan: 1")
             tampilkan_detail_tiket(tiket)
     else:
         # --- Pencarian by nama pelapor (partial match, bisa banyak hasil) ---
@@ -97,14 +97,13 @@ def menu_cari_tiket(daftar_tiket):
         if len(hasil) == 0:
             print(f"Tiket dengan nama pelapor '{kata_kunci}' tidak ditemukan.")
         else:
-            print(f"\nDitemukan {len(hasil)} tiket dengan nama pelapor "
-                  f"mengandung '{kata_kunci}':")
+            print(f"\nJumlah hasil ditemukan: {len(hasil)} (nama pelapor mengandung '{kata_kunci}')")
             tampilkan_tabel_tiket(hasil)
 
 
 # ---------------------------------------------------------------------------
-# UJI MANDIRI: jalankan `python cari_tiket.py` untuk mencoba F3 sendirian
-# (bagian ini tidak ikut jalan saat file di-import oleh main.py)
+# UJI MANDIRI: jalankan `python search.py` 
+# (bagian ini tidak ikut jalan saat file di-import oleh program utama)
 # ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
